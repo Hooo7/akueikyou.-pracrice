@@ -1,0 +1,85 @@
+.body {
+  font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+
+li {
+  list-style: none;
+}
+
+.header-0 {
+  background-color: #32cd32;
+  height: 100px;
+ing: 0px 600px 0px 600px;
+}
+
+header {
+ background: #32cd32;
+}
+
+
+.h-menu{
+  position: relative;
+}
+
+.h-menuCheckbox {
+  display:none;
+}
+
+.h-menu_icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+.hamburger-icon, .hamburger-icon::before, .hamburger-icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 100;
+    top:5px;
+    bottom:0;
+    width: 70px;
+    height: 10px;
+    background: white;
+    cursor: pointer;
+    border:inset 2.5px #556b2f
+}
+.hamburger-icon:before {
+    top: 22px;
+}
+.hamburger-icon:after {
+    top: 44px;
+}
+
+#h-menu_black {
+    display: none;
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .7s ease-in-out;
+}
+
+#h-menu_content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    max-width: 320px;
+    height: 100vh;
+    padding: 53px 16px 16px;
+    background: #1f2c3;
+    overflow: auto;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+}
